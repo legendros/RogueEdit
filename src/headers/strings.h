@@ -20,8 +20,14 @@ namespace Strings
     static const QString appStyleSheet = "* { font-family: \"Tahoma\"; font-size: 11px; font-weight: normal } QComboBox#comboBoxItemRarityEdit QAbstractScrollArea { min-height: 56px; }";
 #elif defined(Q_OS_MAC)
     static const std::string playerDataPrefix = "/Users/";
-    static const std::string playerDataSuffix = "/Library/Application Support/unity.DefaultCompany.Roguelands/PlayerPrefs.txt";
+    static const std::string playerDataSuffix = ".config/unity3d/DefaultCompany/Roguelands/PlayerPrefs.txt";
     static const std::string tmpDataSuffix = "/Library/Application Support/unity.DefaultCompany.Roguelands/.txt";
+    static const QString appStyle = "Fusion";
+    static const QString appStyleSheet = "* { font-family: \"Arial\"; font-size: 11px; font-weight: normal } QTabBar::tab { color: black } QComboBox#comboBoxDifficultyEdit QAbstractScrollArea { min-height: 40px; } QComboBox#comboBoxRaceEdit QAbstractScrollArea { min-height: 480px; } QComboBox#comboBoxClassEdit QAbstractScrollArea { min-height: 300px; } QComboBox#comboBoxAllegianceEdit QAbstractScrollArea { min-height: 80px; } QComboBox#comboBoxVariantEdit QAbstractScrollArea { min-height: 60px; } QComboBox#comboBoxUniformEdit QAbstractScrollArea { min-height: 480px; } QComboBox#comboBoxAugmentEdit QAbstractScrollArea { min-height: 400px; } QComboBox#comboBoxItemRarityEdit QAbstractScrollArea { min-height: 80px; }";
+#elif defined(Q_OS_LINUX)
+    static const std::string playerDataPrefix = "/home/";
+    static const std::string playerDataSuffix = "/.config/unity3d/DefaultCompany/Roguelands/PlayerPrefs.txt";
+    static const std::string tmpDataSuffix = "/.config/unity3d/DefaultCompany/Roguelands/.txt";
     static const QString appStyle = "Fusion";
     static const QString appStyleSheet = "* { font-family: \"Arial\"; font-size: 11px; font-weight: normal } QTabBar::tab { color: black } QComboBox#comboBoxDifficultyEdit QAbstractScrollArea { min-height: 40px; } QComboBox#comboBoxRaceEdit QAbstractScrollArea { min-height: 480px; } QComboBox#comboBoxClassEdit QAbstractScrollArea { min-height: 300px; } QComboBox#comboBoxAllegianceEdit QAbstractScrollArea { min-height: 80px; } QComboBox#comboBoxVariantEdit QAbstractScrollArea { min-height: 60px; } QComboBox#comboBoxUniformEdit QAbstractScrollArea { min-height: 480px; } QComboBox#comboBoxAugmentEdit QAbstractScrollArea { min-height: 400px; } QComboBox#comboBoxItemRarityEdit QAbstractScrollArea { min-height: 80px; }";
 #endif
